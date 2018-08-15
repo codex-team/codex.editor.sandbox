@@ -1,0 +1,6 @@
+[submodule "www/src"]
+	path = www/src
+	url = https://github.com/codex-team/codex.editor.backend.git
+[submodule "www/public/codex.editor"]
+	path = www/public/codex.editor
+	url = https://github.com/codex-team/codex.editor.git
