@@ -1,0 +1,23 @@
+{
+  "name": "codex-team/codex.editor.sandbox",
+  "type": "library",
+  "description": "Codex Editor server side playground",
+  "license": "MIT",
+  "version": "1.0.1",
+  "authors": [
+    {
+      "name": "n0str",
+      "email": "spb.menshikov@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ezyang/htmlpurifier": "^4.8",
+    "mongodb/mongodb": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodexEditor\\": "src\\CodexEditor"
+    }
+  }
+}

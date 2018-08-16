@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+.data
+logs
+vendor
+*.sublime-project
+
+*.sublime-workspace
+.env
+.composer.lock

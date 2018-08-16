@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+    nginx:
+        image: nginx:latest
+        ports:
+          - 80:80
+        links:
+          - php
+        volumes:
+          - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+        volumes_from:
+          - php
+    php:
+        build: docker/php
+        volumes:
+            - ./www:/var/www/codex.editor.server/
+    db:
+        image: mongo:latest
+        ports:
+            - 27017:27017
